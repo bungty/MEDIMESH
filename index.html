@@ -43,6 +43,50 @@
   background:#ffc107;
   border:none;
 }
+
+.brand-name{
+  font-size:20px;
+}
+
+.brand-tagline{
+  margin-left:auto;
+  margin-right:20px;
+  font-size:14px;
+  color:#555;
+  max-width:420px;
+  line-height:1.4;
+  text-align:right;
+}
+
+/* Tablet */
+@media(max-width:991px){
+  .brand-tagline{
+    max-width:300px;
+    font-size:13px;
+  }
+}
+
+/* Mobile */
+@media(max-width:575px){
+  .navbar-brand{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .brand-tagline{
+    margin-left:0;
+    margin-top:6px;
+    text-align:left;
+    max-width:100%;
+    font-size:13px;
+  }
+
+  .logo-img{
+    height:60px;
+  }
+}
+
+
 </style>
 
 </head>
@@ -51,12 +95,16 @@
 <nav class="navbar navbar-expand-lg bg-white border-bottom py-2">
   <div class="container-fluid px-4">
 
-    <!-- Logo -->
+    <!-- LEFT : Logo -->
     <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="images/logo.jpeg" alt="MEDIMESH" height="80" class="me-2">
-      A  Complete Solution for <br>
-      All Type of Uniforms
-    </a>
+  <img src="images/logo.jpeg" alt="MEDIMESH" height="80" class="me-2 logo-img">
+  <strong class="brand-name">MEDIMESH</strong>
+</a>
+
+<div class="brand-tagline">
+  A Complete Solution for All Type of Uniforms
+</div>
+
 
     <!-- Toggle -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav">
@@ -73,11 +121,11 @@
         <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
       </ul>
 
-      <!-- Button -->
       <a href="#" class="btn btn-warning px-4 fw-bold">Get A Quote</a>
     </div>
   </div>
 </nav>
+
 
 <!-- ===== SECOND NAVBAR ===== -->
 <nav class="navbar navbar-expand-lg navbar-dark uniform-nav">
