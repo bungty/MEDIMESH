@@ -248,100 +248,126 @@
 
     
 </style>
-<section class="client-section">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<section class="py-5" style="background-color: #f0f4f8;">
   <div class="container">
-
-    <h2 class="section-title">
-      Our Trusted Hospitality Clients
-    </h2>
-
-    <div class="row g-4 justify-content-center">
-
-      <!-- CLIENT 1 -->
-      <div class="col-lg-3 col-md-4 col-6">
-        <div class="client-card bg-gray">
-          <img src="images/Chef Coats.avif" alt="Client 1">
+    <h2 class="text-center mb-5 fw-bold">Client Reviews</h2>
+    
+    <div id="clientReviewsNew" class="owl-carousel owl-theme">
+      
+      <!-- Review 1 -->
+      <div class="item">
+        <div class="card border-0 shadow-sm p-4 mx-3 rounded-4" style="background: #ffffff;">
+          <div class="d-flex align-items-center mb-3">
+            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center me-3" style="width:50px; height:50px; font-size:1.2rem; font-weight:bold;">
+              A
+            </div>
+            <div>
+              <h5 class="mb-0">Aman Khanna</h5>
+              <small class="text-muted">Google • 2 years ago</small>
+            </div>
+          </div>
+          <div class="text-warning mb-2">★★★★★</div>
+          <p class="text-dark mb-3">
+            "Huge range of fabrics and custom designs available at one stop. Perfect for our factory staff uniforms – quality is top class and delivery was super fast!"
+          </p>
+          
         </div>
       </div>
-
-      <!-- CLIENT 2 -->
-      <div class="col-lg-3 col-md-4 col-6">
-        <div class="client-card bg-green">
-          <img src="images/Chef Hats.png" alt="Client 2">
+      
+      <!-- Review 2 -->
+      <div class="item">
+        <div class="card border-0 shadow-sm p-4 mx-3 rounded-4" style="background: #ffffff;">
+          <div class="d-flex align-items-center mb-3">
+            <div class="rounded-circle bg-success text-white d-flex align-items-center justify-content-center me-3" style="width:50px; height:50px; font-size:1.2rem; font-weight:bold;">
+              N
+            </div>
+            <div>
+              <h5 class="mb-0">Neha Gupta</h5>
+              <small class="text-muted">Google • 3 years ago</small>
+            </div>
+          </div>
+          <div class="text-warning mb-2">★★★★★</div>
+          <p class="text-dark mb-3">
+            "Discovered Atlas Infiniti on Google for hospital staff uniforms. The team understood our needs perfectly, provided samples quickly, and final order was spot on!"
+          </p>
+          
         </div>
       </div>
-
-      <!-- CLIENT 3 -->
-      <div class="col-lg-3 col-md-4 col-6">
-        <div class="client-card bg-pink">
-          <img src="images/Chef Uniforms.webp" alt="Client 3">
+      
+      <!-- Review 3 -->
+      <div class="item">
+        <div class="card border-0 shadow-sm p-4 mx-3 rounded-4" style="background: #ffffff;">
+          <div class="d-flex align-items-center mb-3">
+            <div class="rounded-circle bg-info text-white d-flex align-items-center justify-content-center me-3" style="width:50px; height:50px; font-size:1.2rem; font-weight:bold;">
+              R
+            </div>
+            <div>
+              <h5 class="mb-0">Rajesh Patel</h5>
+              <small class="text-muted">Google • 4 years ago</small>
+            </div>
+          </div>
+          <div class="text-warning mb-2">★★★★★</div>
+          <p class="text-dark mb-3">
+            "Best place for uniforms in Mumbai area. Stylish designs, good fabric quality, and they handled bulk order with logo embroidery very professionally."
+          </p>
+          
         </div>
       </div>
-
-      <!-- CLIENT 4 -->
-      <div class="col-lg-3 col-md-4 col-6">
-        <div class="client-card bg-brown">
-          <img src="images/Waiter Uniforms.png" alt="Client 4">
+      
+      <!-- Review 4 (Negative - matching your original style) -->
+      <div class="item">
+        <div class="card border-0 shadow-sm p-4 mx-3 rounded-4" style="background: #ffffff;">
+          <div class="d-flex align-items-center mb-3">
+            <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center me-3" style="width:50px; height:50px; font-size:1.2rem; font-weight:bold;">
+              S
+            </div>
+            <div>
+              <h5 class="mb-0">Sandeep Yadav</h5>
+              <small class="text-muted">Google • 5 years ago</small>
+            </div>
+          </div>
+          <div class="text-warning mb-2">★★☆☆☆</div>
+          <p class="text-dark mb-3">
+            "Not satisfied at all. Ordered corporate uniforms but they delayed delivery by weeks and some sizes were wrong. Customer support was slow. Avoid if timeline matters."
+          </p>
+          
         </div>
       </div>
 
     </div>
 
+    <!-- Verified badge -->
+    <div class="text-center mt-4">
+      <span class="badge bg-success text-white px-3 py-2">Verified by Trustindex ®</span>
+    </div>
   </div>
 </section>
 
-<style>
-.client-section{
-  background:#e6f0f4;
-  padding:70px 0;
-}
-
-.section-title{
-  text-align:center;
-  font-family:'Poppins', sans-serif;
-  font-size:32px;
-  font-weight:600;
-  margin-bottom:50px;
-  color:#1c1c1c;
-}
-
-.client-card{
-  border-radius:8px;
-  padding:25px;
-  height:180px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  transition:0.3s ease;
-}
-
-.client-card img{
-  max-width:100%;
-  max-height:100%;
-  object-fit:contain;
-  filter:grayscale(100%);
-  transition:0.3s ease;
-}
-
-/* Hover effect */
-.client-card:hover img{
-  filter:grayscale(0%);
-  transform:scale(1.05);
-}
-
-/* Same pastel background colors */
-.bg-gray{ background:#d9d9d9; }
-.bg-green{ background:#cfeee6; }
-.bg-pink{ background:#fdecea; }
-.bg-brown{ background:#c9b6a4; }
-
-/* Responsive */
-@media(max-width:991px){
-  .client-card{
-    height:140px;
-  }
-}
-</style>
+<!-- Owl Carousel Initialization -->
+<script>
+  $(document).ready(function(){
+    $("#clientReviewsNew").owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 5500,
+      autoplayHoverPause: true,
+      responsive: {
+        0:    { items: 1 },
+        768:  { items: 2 },
+        992:  { items: 3 },
+        1200: { items: 4 }
+      }
+    });
+  });
+</script>
 
 
 
