@@ -373,7 +373,7 @@
             <img src="images/nursing-uniform6.jpg" alt="Nurse Uniform 6" class="img-fluid uniform-img">
           </a>
         </div>
-        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 ">
           <a href="images/nursing-uniform7.jpg" data-zoom-image="images/nursing-uniform7.jpg">
             <img src="images/nursing-uniform7.jpg" alt="Nurse Uniform 7" class="img-fluid uniform-img">
           </a>
@@ -679,14 +679,21 @@
 
 
 <script>
-// Initialize zoom on all gallery links (works on hover by default, also supports click)
+// Initialize zoom on all gallery links
 $(document).ready(function(){
   $('.gallery a').zoom({
-    url: function(){ return $(this).attr('data-zoom-image'); }, // uses the large image
-    magnify: 1.5,      // zoom level (1.5x default)
-    touch: true,       // enable on mobile/touch
-    duration: 200,     // smooth animation
-    on: 'mouseover'    // or 'click' if you want zoom only on click
+    url: function(){ return $(this).attr('data-zoom-image'); },
+    magnify: 1.5,
+    touch: true,
+    duration: 200,
+    on: 'mouseover'   // zoom starts on hover (good for desktop + mobile hover simulation)
+    // You can change to 'grab' or 'click' if preferred
+  });
+
+  // IMPORTANT: Prevent the link from opening/navigating
+  $('.gallery a').on('click touchstart', function(e) {
+    e.preventDefault();   // Stops navigation to the href
+    // Optional: if you want click to toggle zoom instead, you can handle it here
   });
 });
 </script>
