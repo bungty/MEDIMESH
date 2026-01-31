@@ -733,27 +733,63 @@
   }
 }
 </style>
-<div class="container mt-5">
-  <h4 class="text-center mb-4">Available On Major Platforms</h4>
-  <div class="row justify-content-center align-items-center g-4">
-    <div class="col-6 col-md-3 text-center">
-      <img src="images/GeM Portal Logo.png" alt="GeM Portal Logo" class="img-fluid" style="max-height: 80px;">
-      <p class="mt-2">GeM</p>
-    </div>
-    <div class="col-6 col-md-3 text-center">
-      <img src="images/IndiaMART Logo.jpg" alt="IndiaMART Logo" class="img-fluid" style="max-height: 80px;">
-      <p class="mt-2">IndiaMART</p>
-    </div>
-    <div class="col-6 col-md-3 text-center">
-      <img src="images/Amazon Logo.jpg" alt="Amazon Logo" class="img-fluid" style="max-height: 80px;">
-      <p class="mt-2">Amazon</p>
-    </div>
-    <div class="col-6 col-md-3 text-center">
-      <img src="images/Flipkart Logo.png" alt="Flipkart Logo" class="img-fluid" style="max-height: 80px;">
-      <p class="mt-2">Flipkart</p>
+<div class="container mt-5 mb-5 overflow-hidden">
+  <h4 class="text-center mb-5 fw-bold text-primary">Available On Major Platforms</h4>
+
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      <!-- Duplicate set for seamless loop -->
+      <img src="images/GeM Portal Logo.png" alt="GeM" class="marquee-logo">
+      <img src="images/IndiaMART Logo.jpg" alt="IndiaMART" class="marquee-logo">
+      <img src="images/Amazon Logo.jpg" alt="Amazon" class="marquee-logo">
+      <img src="images/Flipkart Logo.png" alt="Flipkart" class="marquee-logo">
+      
+      <!-- Duplicate -->
+      <img src="images/GeM Portal Logo.png" alt="GeM" class="marquee-logo">
+      <img src="images/IndiaMART Logo.jpg" alt="IndiaMART" class="marquee-logo">
+      <img src="images/Amazon Logo.jpg" alt="Amazon" class="marquee-logo">
+      <img src="images/Flipkart Logo.png" alt="Flipkart" class="marquee-logo">
     </div>
   </div>
 </div>
+
+<style>
+  .marquee-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+
+  .marquee-track {
+    display: flex;
+    gap: 4rem;
+    animation: marquee 25s linear infinite;
+    will-change: transform;
+  }
+
+  .marquee-logo {
+    height: 80px;
+    width: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+  }
+
+  .marquee-logo:hover {
+    transform: scale(1.15);
+  }
+
+  @keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @media (max-width: 768px) {
+    .marquee-logo { height: 60px; }
+    .marquee-track { gap: 2.5rem; animation-duration: 20s; }
+  }
+</style>
 
 <section class="clients-section">
   <div class="container">
